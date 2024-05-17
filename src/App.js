@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import SteveJobsText from './SteveJobsText';
+import stevejobscover from './stevejobscover.jpg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="App-header">Steve Jobs biography</h1>
+      <SteveJobsText/>
+      <br/>
+      <img className='img-responsive' src={stevejobscover} alt='Steve Jobs'/>
+      
     </div>
   );
 }
